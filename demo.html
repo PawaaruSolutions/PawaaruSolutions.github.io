@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		Get value of selected 
+		radio button 
+	</title> 
+</head> 
+
+<body> 
+	<p> 
+		Select a radio button and click on Submit. 
+	</p> 
+	
+	<div id="country">
+	<input type="radio" id="test" name="gender" value="india" onchange="displayRadioValue('india')">INDIA 
+	<input type="radio" id="test" name="gender" value="usa"  onchange="displayRadioValue('usa')">USA 
+	<input type="radio" id="test" name="gender" value="canada"  onchange="displayRadioValue('canada')">CANADA 
+	</div>
+	<br> 
+	
+	
+	
+	<br> 
+	
+	<div id="result"></div> 
+	
+	<script> 
+		function displayRadioValue(test) { 
+            alert("inida");
+			var ele = document.getElementById('test').value;
+			alert("pawan"+test);
+			//alert("hello"+ele);
+				if(test=="india") {
+				document.getElementById("result").innerHTML
+						= 	'<div >INDIA</div>	<p><strong>Pawaaru Solutions,</strong><br />579/3, Mehrauli<br /> New Delhi<br /> Delhi<br /> Email: <a href="mailto:contact@pawaaru.com">contact@pawaaru.com</a></p>'
+    }
+    if(test=="usa") {
+				document.getElementById("result").innerHTML
+						= 	'<div >USA</div>	<p><strong>Pawaaru Solutions,</strong><br />579/3, Mehrauli<br /> New Delhi<br /> Delhi<br /> Email: <a href="mailto:contact@pawaaru.com">contact@pawaaru.com</a></p>'
+    }
+    if(test=="canada") {
+				document.getElementById("result").innerHTML
+						= 	'<div >CANADA</div>	<p><strong>Pawaaru Solutions,</strong><br />579/3, Mehrauli<br /> New Delhi<br /> Delhi<br /> Email: <a href="mailto:contact@pawaaru.com">contact@pawaaru.com</a></p>'
+    }
+    } 
+	</script> 
+</body> 
+</html>					 
